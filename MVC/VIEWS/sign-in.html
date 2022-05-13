@@ -1,0 +1,129 @@
+<!-- <?php
+if(array_key_exists('registrar', $_REQUEST)){
+    include_once('../PHP/CONTROLLERS/sign-in-controller.php');
+    $objController = new SignInController();
+
+    $aux = $objController->altasUsers($_REQUEST['name'], $_REQUEST['lastName1'], $_REQUEST['lastName2'], $_REQUEST['userName'], $_REQUEST['correo'], 
+    $_REQUEST['phone'], $_REQUEST['departments'], $_REQUEST['pass']);
+    echo "<script>alert('$aux');</script>";
+}
+?> -->
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registrarse</title>
+    <link rel="stylesheet" href="../../CSS/styleSignIn.css">
+
+    <meta http-equiv="Expires" content="0">
+    <meta http-equiv="Last-Modified" content="0">
+    <meta http-equiv="Cache-Control" content="no-cache, mustrevalidate">
+    <meta http-equiv="Pragma" content="no-cache">
+</head>
+<body>
+    <section>
+        <section id="signIn">
+            <div class="classDivTitle">
+                <h2>Registrarse</h2>
+            </div>
+            <form action="" class="classFormulario">
+                <table class="classTable">
+                    <tr>
+                        <td class="classLeft">
+                            <label for="name" class="classLabel">Nombre(s)</label>
+                        </td>
+                        <td>
+                            <input type="text" id="name" placeholder="" class="classTextInput" required>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="classLeft">
+                            <label for="lastName1" class="classLabel">Apellido Paterno</label>
+                        </td>
+                        <td>
+                            <input type="text" id="lastName1" placeholder="" class="classTextInput" required>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="classLeft">
+                            <label for="lastName2" class="classLabel">Apellido Materno</label>
+                        </td>
+                        <td>
+                            <input type="text" id="lastName2" placeholder="" class="classTextInput" required>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="classLeft">
+                            <label for="userName" class="classLabel">Nombre de usuario</label>
+                        </td>
+                        <td>
+                            <input type="text" id="userName" placeholder="" class="classTextInput" required>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="classLeft">
+                            <label for="correo" class="classLabel">Correo</label>
+                        </td>
+                        <td>
+                            <input type="email" id="correo" placeholder="" class="classTextInput" required>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="classLeft">
+                            <label for="phone" class="classLabel">Teléfono</label>
+                        </td>
+                        <td>
+                            <input type="number" id="phone" placeholder="" class="classTextInput" required>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="classLeft">
+                            <label for="departments" class="classLabel">Departamento</label>
+                        </td>
+                        <td>
+                            <select name="departments" id="departments" class="classTextInput" required>
+                                <option value="">Selecciona una opción...</option>
+                                <option value="ISC">Ing. Sistemas computacionales</option>
+                                <option value="IA">Ing. Administración</option>
+                                <option value="IC">Ing. Civil</option>
+                                <option value="IM">Ing. Mecatrónica</option>
+                                <option value="IMA">Ing. Mecánica</option>
+                                <option value="II">Ing. Industrial</option>
+                                <option value="IE">Ing. Electrónica</option>
+                                <option value="IIA">Ing. Industrias Alimentarias</option>
+                                <option value="LE">Lenguas extranjeras</option>
+                                <option value="SE">Servicios escolares</option>
+                                <option value="DE">Deportivo</option>
+                                <option value="CU">Cultural</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="classLeft">
+                            <label for="pass" class="classLabel">Contraseña</label>
+                        </td>
+                        <td>
+                            <input type="password" id="pass" placeholder="" class="classTextInput" required>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="classLeft">
+                            <label for="passConfirm" class="classLabel">Confirmar contraseña</label>
+                        </td>
+                        <td>
+                            <input type="password" id="passConfirm" placeholder="" class="classTextInput" required>
+                        </td>
+                    </tr>
+                </table>
+                <div class="classDivBtnRegister">
+                    <br>
+                    <input type="submit" value="Registrar" id="buttonRegister" name="registrar">
+                </div>
+            </form>
+        </section>
+    </section>
+</body>
+</html>

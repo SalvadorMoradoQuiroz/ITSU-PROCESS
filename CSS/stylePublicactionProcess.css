@@ -1,0 +1,56 @@
+*{
+    box-sizing: border-box;
+    margin: 0%;
+}
+
+body{
+    /* font-family: 'Robot', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; */
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+#publicationProcess{
+    background-color: white;
+    margin-left: 110px;
+    margin-right: 110px;
+    box-shadow: 2px 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+#publicationProcess>div{
+    width: 100%;
+    padding-top: 20px;
+    padding-top: 20px;
+    text-align: center;
+    /* background-color: aqua; */
+}
+
+/* #publicationProcess>div>h2{
+
+} */
+
+#videoProcess{
+    border: 1;
+    border-color: black;
+    width: 50%;
+    /* text-align: center; */
+}
+
+#descriptionProcess{
+    width: 50%;
+    /* background-color: blueviolet; */
+    text-align: left;
+    margin-left: 25%;
+}
+
+#imagenProcess{
+    width: 30%;
+}
+
+.divDownloadFile{
+    width: 40%;
+    margin-left: 30%;
+    background-color: #7ba0f8;
+    border-radius: 20px;
+}
+
+.spanDownloadFile{
+}
