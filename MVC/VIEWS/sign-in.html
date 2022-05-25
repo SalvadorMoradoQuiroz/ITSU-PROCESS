@@ -1,16 +1,6 @@
-<!-- <?php
-if(array_key_exists('registrar', $_REQUEST)){
-    include_once('../PHP/CONTROLLERS/sign-in-controller.php');
-    $objController = new SignInController();
-
-    $aux = $objController->altasUsers($_REQUEST['name'], $_REQUEST['lastName1'], $_REQUEST['lastName2'], $_REQUEST['userName'], $_REQUEST['correo'], 
-    $_REQUEST['phone'], $_REQUEST['departments'], $_REQUEST['pass']);
-    echo "<script>alert('$aux');</script>";
-}
-?> -->
-
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -23,20 +13,21 @@ if(array_key_exists('registrar', $_REQUEST)){
     <meta http-equiv="Cache-Control" content="no-cache, mustrevalidate">
     <meta http-equiv="Pragma" content="no-cache">
 </head>
+
 <body>
     <section>
         <section id="signIn">
             <div class="classDivTitle">
                 <h2>Registrarse</h2>
             </div>
-            <form action="" class="classFormulario">
+            <form action="" class="classFormulario" id="formRegister" name="formRegister">
                 <table class="classTable">
                     <tr>
                         <td class="classLeft">
                             <label for="name" class="classLabel">Nombre(s)</label>
                         </td>
                         <td>
-                            <input type="text" id="name" placeholder="" class="classTextInput" required>
+                            <input type="text" id="name" name="name" placeholder="" class="classTextInput" required>
                         </td>
                     </tr>
                     <tr>
@@ -44,7 +35,7 @@ if(array_key_exists('registrar', $_REQUEST)){
                             <label for="lastName1" class="classLabel">Apellido Paterno</label>
                         </td>
                         <td>
-                            <input type="text" id="lastName1" placeholder="" class="classTextInput" required>
+                            <input type="text" id="lastName1" name="lastName1" placeholder="" class="classTextInput" required>
                         </td>
                     </tr>
                     <tr>
@@ -52,7 +43,7 @@ if(array_key_exists('registrar', $_REQUEST)){
                             <label for="lastName2" class="classLabel">Apellido Materno</label>
                         </td>
                         <td>
-                            <input type="text" id="lastName2" placeholder="" class="classTextInput" required>
+                            <input type="text" id="lastName2" name="lastName2" placeholder="" class="classTextInput" required>
                         </td>
                     </tr>
                     <tr>
@@ -60,7 +51,7 @@ if(array_key_exists('registrar', $_REQUEST)){
                             <label for="userName" class="classLabel">Nombre de usuario</label>
                         </td>
                         <td>
-                            <input type="text" id="userName" placeholder="" class="classTextInput" required>
+                            <input type="text" id="userName" name="userName" placeholder="" class="classTextInput" required>
                         </td>
                     </tr>
                     <tr>
@@ -68,7 +59,7 @@ if(array_key_exists('registrar', $_REQUEST)){
                             <label for="correo" class="classLabel">Correo</label>
                         </td>
                         <td>
-                            <input type="email" id="correo" placeholder="" class="classTextInput" required>
+                            <input type="email" id="correo" name="correo" placeholder="" class="classTextInput" required>
                         </td>
                     </tr>
                     <tr>
@@ -76,7 +67,7 @@ if(array_key_exists('registrar', $_REQUEST)){
                             <label for="phone" class="classLabel">Teléfono</label>
                         </td>
                         <td>
-                            <input type="number" id="phone" placeholder="" class="classTextInput" required>
+                            <input type="text" id="phone" name="phone" placeholder="" class="classTextInput" required>
                         </td>
                     </tr>
                     <tr>
@@ -106,7 +97,7 @@ if(array_key_exists('registrar', $_REQUEST)){
                             <label for="pass" class="classLabel">Contraseña</label>
                         </td>
                         <td>
-                            <input type="password" id="pass" placeholder="" class="classTextInput" required>
+                            <input type="password" id="pass" name="pass" placeholder="" class="classTextInput" required>
                         </td>
                     </tr>
                     <tr>
@@ -114,16 +105,21 @@ if(array_key_exists('registrar', $_REQUEST)){
                             <label for="passConfirm" class="classLabel">Confirmar contraseña</label>
                         </td>
                         <td>
-                            <input type="password" id="passConfirm" placeholder="" class="classTextInput" required>
+                            <input type="password" id="passConfirm" name="passConfirm" placeholder="" class="classTextInput" required>
                         </td>
                     </tr>
                 </table>
                 <div class="classDivBtnRegister">
                     <br>
-                    <input type="submit" value="Registrar" id="buttonRegister" name="registrar">
+                    <input type="submit" value="Registrar" id="buttonRegister" name="buttonRegister">
                 </div>
             </form>
         </section>
     </section>
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script type="text/javascript" src="../../JS/signInJS.js"></script>
 </body>
+
 </html>

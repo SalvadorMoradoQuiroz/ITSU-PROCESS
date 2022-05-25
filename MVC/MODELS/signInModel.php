@@ -1,5 +1,5 @@
 <?php
-class ConexionDB{
+class SignInModel{
     private $user="root";
     private $pass="";
     private $host="127.0.0.1";
