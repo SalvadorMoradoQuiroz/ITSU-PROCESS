@@ -1,5 +1,6 @@
 <?php
-include_once('../MVC/CONTROLLERS/signInController.php');
+include_once('../../MODELS/signInModel.php');
+include_once('../../CONTROLLERS/signInController.php');
 
 $name = $_POST['name'];
 $lastName1 = $_POST['lastName1'];

@@ -10,11 +10,11 @@ class SignInModel{
     {
         try{
             $this->con= new mysqli($this->host,$this->user,$this->pass,$this->db);
-            print("Conexion exitosa!!!");
+            //print("Conexion exitosa!!!");
         }
         catch(Exception $e){
-            print($e->getMessage());
-            print("Error!!!");
+            //print($e->getMessage());
+            //print("Error!!!");
         }
     }
 
