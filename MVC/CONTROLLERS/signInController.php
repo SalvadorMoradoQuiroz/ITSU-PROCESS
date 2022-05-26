@@ -7,8 +7,8 @@ class SignInController{
         $this->objModelSignIn = new SignInModel();
     }
 
-    public function altasUsers($name, $userName, $lastNameF, $lastNameS, $email, $phone, $department, $pass){
-        return $this->objModelSignIn->altasUsers($name, $userName, $lastNameF, $lastNameS, $email, $phone, $department, $pass);
+    public function altasUsers($name, $lastNameF, $lastNameS, $email, $phone, $department, $pass, $activo){
+        return $this->objModelSignIn->altasUsers($name, $lastNameF, $lastNameS, $email, $phone, $department, $pass, $activo);
     }
 }
 ?>

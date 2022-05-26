@@ -18,14 +18,14 @@ class SignInModel{
         }
     }
 
-    public function altasUsers($name, $userName, $lastNameF, $lastNameS, $email, $phone, $department, $pass){
+    public function altasUsers($name, $lastNameF, $lastNameS, $email, $phone, $department, $pass, $activo){
         try{
-            $sentenciaSQL = "INSERT INTO users (name, userName, lastNameF, lastNameS, email, phone, department, pass) VALUES('$name', '$userName', 
-            '$lastNameF', '$lastNameS', '$email', '$phone', '$department', '$pass');";
+            $sentenciaSQL = "INSERT INTO users (name, lastNameF, lastNameS, email, phone, department, pass, activo) VALUES('$name', 
+            '$lastNameF', '$lastNameS', '$email', '$phone', '$department', '$pass', '$activo');";
             $this->con->query($sentenciaSQL);
-            return "Datos ingresados correctamente!";
+            return "¡Usuario registrado con éxito!";
         }catch(Exception $e){
-            return "Error al insertar los datos en la BD!";
+            return "Error al registrar el usuario!, ¡Intenta de nuevo!";
         }
     }
 }

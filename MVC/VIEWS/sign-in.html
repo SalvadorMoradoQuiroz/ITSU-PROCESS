@@ -48,14 +48,6 @@
                     </tr>
                     <tr>
                         <td class="classLeft">
-                            <label for="userName" class="classLabel">Nombre de usuario</label>
-                        </td>
-                        <td>
-                            <input type="text" id="userName" name="userName" placeholder="" class="classTextInput" required>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="classLeft">
                             <label for="correo" class="classLabel">Correo</label>
                         </td>
                         <td>
@@ -67,7 +59,7 @@
                             <label for="phone" class="classLabel">Teléfono</label>
                         </td>
                         <td>
-                            <input type="text" id="phone" name="phone" placeholder="" class="classTextInput" required>
+                            <input type="number" id="phone" name="phone" placeholder="" maxlength="10" class="classTextInput" required >
                         </td>
                     </tr>
                     <tr>
@@ -77,18 +69,18 @@
                         <td>
                             <select name="departments" id="departments" class="classTextInput" required>
                                 <option value="">Selecciona una opción...</option>
-                                <option value="ISC">Ing. Sistemas computacionales</option>
-                                <option value="IA">Ing. Administración</option>
-                                <option value="IC">Ing. Civil</option>
-                                <option value="IM">Ing. Mecatrónica</option>
-                                <option value="IMA">Ing. Mecánica</option>
-                                <option value="II">Ing. Industrial</option>
-                                <option value="IE">Ing. Electrónica</option>
-                                <option value="IIA">Ing. Industrias Alimentarias</option>
-                                <option value="LE">Lenguas extranjeras</option>
-                                <option value="SE">Servicios escolares</option>
-                                <option value="DE">Deportivo</option>
-                                <option value="CU">Cultural</option>
+                                <option value="Ing. Sistemas computacionales">Ing. Sistemas computacionales</option>
+                                <option value="Ing. Administración">Ing. Administración</option>
+                                <option value="Ing. Civil">Ing. Civil</option>
+                                <option value="Ing. Mecatrónica">Ing. Mecatrónica</option>
+                                <option value="Ing. Mecánica">Ing. Mecánica</option>
+                                <option value="Ing. Industrial">Ing. Industrial</option>
+                                <option value="Ing. Electrónica">Ing. Electrónica</option>
+                                <option value="Ing. Industrias Alimentarias">Ing. Industrias Alimentarias</option>
+                                <option value="Lenguas extranjeras">Lenguas extranjeras</option>
+                                <option value="Servicios escolares">Servicios escolares</option>
+                                <option value="Deportivo">Deportivo</option>
+                                <option value="Cultural">Cultural</option>
                             </select>
                         </td>
                     </tr>
@@ -119,6 +111,7 @@
 
     <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.0/jquery.validate.min.js"></script> -->
     <script type="text/javascript" src="../PUBLIC/JS/signInJS.js"></script>
 </body>
 
