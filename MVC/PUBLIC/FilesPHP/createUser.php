@@ -2,6 +2,8 @@
 include_once('../../MODELS/signInModel.php');
 include_once('../../CONTROLLERS/signInController.php');
 
+header("Content-Type: text/html;charset=utf-8");
+
 $name = $_POST['name'];
 $lastName1 = $_POST['lastName1'];
 $lastName2 = $_POST['lastName2'];

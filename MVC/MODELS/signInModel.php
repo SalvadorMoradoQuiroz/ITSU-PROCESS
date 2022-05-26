@@ -10,6 +10,7 @@ class SignInModel{
     {
         try{
             $this->con= new mysqli($this->host,$this->user,$this->pass,$this->db);
+            $this->con->set_charset("utf8");
             //print("Conexion exitosa!!!");
         }
         catch(Exception $e){
