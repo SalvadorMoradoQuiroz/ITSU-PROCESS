@@ -1,3 +1,13 @@
+<?php
+error_reporting(E_ERROR);
+session_start();
+if(array_key_exists('usuario', $_SESSION) && array_key_exists('contra', $_SESSION)){
+    header('Location:admin.php');
+}else{
+    session_destroy();
+}
+?>
+
 <!DOCTYPE html>
 <html lang="es">
 

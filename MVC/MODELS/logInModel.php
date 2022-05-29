@@ -51,5 +51,15 @@ class LogInModel{
         }
     }
 
+    public  function consultFullName($email){
+        try {
+            $sentenciaSQL = "SELECT name, lastNameF, lastNameS FROM users WHERE email='" . $email . "';";
+            $res = $this->con->query($sentenciaSQL)->fetch_assoc();
+            return $res['name'] . ' ' . $res['lastNameF'] . ' ' . $res['lastNameS'];
+        } catch (Exception $e) {
+            return "Usuario X";
+        }
+    }
+
 
 }
