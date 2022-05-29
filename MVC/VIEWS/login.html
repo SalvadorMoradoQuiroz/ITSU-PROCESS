@@ -19,22 +19,22 @@
         <div class="classDivTitle">
             <h2>Login</h2>
         </div>
-        <form action="../VIEWS/admin.html" class="classFormulario">
+        <form action="" class="classFormulario" id="formLogIn" name="formLogIn">
             <table class="classTable">
                 <tr>
                     <td class="classLeft">
-                        <label for="correo" class="classLabel">Correo</label>
+                        <label for="correoLogIn" class="classLabel">Correo</label>
                     </td>
                     <td>
-                        <input type="text" id="correo" placeholder="example@example.com" class="classTextInput">
+                        <input type="email" id="correoLogIn" name="correoLogIn" placeholder="example@example.com" class="classTextInput" required>
                     </td>
                 </tr>
                 <tr>
                     <td class="classLeft">
-                        <label for="pass" class="classLabel">Contraseña</label>
+                        <label for="passLogIn" class="classLabel">Contraseña</label>
                     </td>
                     <td>
-                        <input type="password" id="pass" placeholder="Contraseña" class="classTextInput">
+                        <input type="password" id="passLogIn" name="passLogIn" placeholder="Contraseña" class="classTextInput" required>
                     </td>
                 </tr>
             </table>
@@ -52,6 +52,10 @@
             </a>
         </div>
     </section>
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script type="text/javascript" src="../PUBLIC/JS/logInJS.js"></script>
 </body>
 
 </html>

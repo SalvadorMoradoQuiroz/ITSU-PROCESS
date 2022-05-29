@@ -9,10 +9,9 @@ $lastName1 = $_POST['lastName1'];
 $lastName2 = $_POST['lastName2'];
 $correo = $_POST['correo'];
 $phone = $_POST['phone'];
-$departments = $_POST['departments'];
+$departments = intval($_POST['departments']);
 $pass = $_POST['pass'];
 
 $objSingInController = new SignInController();
 echo json_encode($objSingInController->altasUsers($name, $lastName1, $lastName2, $correo, $phone, $departments, $pass, 0));
-
 ?>
