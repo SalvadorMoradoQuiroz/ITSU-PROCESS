@@ -59,10 +59,14 @@ session_start();
             </tr>
             <tr>
                 <td>
-                    <button class="classButtonsAdmin">Nuevo Proceso</button>
+                    <a href="../VIEWS/create-process.html">
+                        <button class="classButtonsAdmin">Nuevo Proceso</button>
+                    </a>
                 </td>
                 <td>
-                    <button class="classButtonsAdmin">Modificar o Eliminar</button>
+                    <a href="../VIEWS/list-process-modify.html">
+                        <button class="classButtonsAdmin">Modificar o Eliminar</button>
+                    </a>
                 </td>
                 <td>
                     <a href="../PUBLIC/FilesPHP/closeSession.php">

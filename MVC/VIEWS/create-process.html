@@ -17,30 +17,30 @@
         <div class="classDivTitle">
             <h2>Crear proceso</h2>
         </div>
-        <form action="" class="classFormulario">
+        <form action="" class="classFormulario" id="formCreateProcess" name="formCreateProcess">
             <div class="classLeft">
                 <label for="title" class="classLabel">Titulo (Obligatorio)</label>
                 <br>
-                <input type="text" id="title" name="title" class="classTextInput">
+                <input type="text" id="title" name="title" class="classTextInput" required>
             </div>
             <div class="classLeft">
                 <label for="description" class="classLabel">Descripción (Obligatorio)</label>
                 <br>
-                <input type="text" id="description" name="description" class="classTextInput classTextInputTitle">
+                <input type="text" id="description" name="description" required class="classTextInput classTextInputTitle">
             </div>
             <table class="classTable">
                 <tr>
                     <td>
                         <label for="video" class="classLabel">Video (Opcional)</label>
-                        <input type="file" id="video"  class="classTextInputFile">
+                        <input type="file" id="video" name="video"  class="classTextInputFile">
                     </td>
                     <td>
                         <label for="image" class="classLabel">Imagen (Opcional)</label>
-                        <input type="file" id="image"  class="classTextInputFile">
+                        <input type="file" id="image" name="image" class="classTextInputFile">
                     </td>
                     <td>
-                        <label for="doc" class="classLabel">Documento</label>
-                        <input type="file" id="doc"  class="classTextInputFile">
+                        <label for="doc" class="classLabel">Documento (Obligatorio)</label>
+                        <input type="file" id="doc" name="doc" required class="classTextInputFile">
                     </td>
                 </tr>
             </table>
@@ -49,5 +49,8 @@
             </div>
         </form>
     </section>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script type="text/javascript" src="../PUBLIC/JS/createProcessJS.js"></script>
 </body>
 </html>

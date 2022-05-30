@@ -61,5 +61,15 @@ class LogInModel{
         }
     }
 
+    public  function consultDepartment($email){
+        try {
+            $sentenciaSQL = "SELECT department FROM users WHERE email='" . $email . "';";
+            $res = $this->con->query($sentenciaSQL)->fetch_assoc();
+            return $res['department'];
+        } catch (Exception $e) {
+            return "department";
+        }
+    }
+
 
 }
