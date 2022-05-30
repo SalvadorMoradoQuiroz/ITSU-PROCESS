@@ -40,7 +40,7 @@ if (!empty($video)) {
 }
 
 if (!empty($image)) {
-    $rutaImages = '../../PUBLIC/DATA/IMAGES/';
+    $rutaImages = '../../PUBLIC/DATA/IMAGES/PROCESS/';
     $rutaFileImage = $rutaImages . $image;
     if (move_uploaded_file($_FILES['image']['tmp_name'], $rutaFileImage)) {
         //echo "<script>alert('La imagen se subió correctamente');</script>";
