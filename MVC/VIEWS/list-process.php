@@ -90,7 +90,7 @@ if (array_key_exists('value', $_REQUEST)) {
                                         <p class="card-text"><?php echo $proceso['title'] ?></p>
                                         <div class="d-flex justify-content-between align-items-center">
                                             <div class="btn-group">
-                                                <a href="../VIEWS/publication-process.html?idProceso=<?php echo $proceso['idProcess']; ?>">
+                                                <a href="../VIEWS/publication-process.php?idProceso=<?php echo $proceso['idProcess']; ?>">
                                                     <button type="button" class="btn btn-sm btn-outline-primary">Ver</button>
                                                 </a>
                                             </div>

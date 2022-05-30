@@ -14,4 +14,8 @@ class ProcessController{
     public function consultProcess($idDepartment){
         return $this->objProcessModel->consultProcess($idDepartment);
     }
+
+    public function consultSpecificProcess($idProcess){
+        return $this->objProcessModel->consultSpecificProcess($idProcess);
+    }
 }

@@ -9,6 +9,7 @@ body{
 }
 
 #publicationProcess{
+    height: 1000px;
     background-color: white;
     margin-left: 110px;
     margin-right: 110px;
@@ -37,7 +38,7 @@ body{
 #descriptionProcess{
     width: 50%;
     /* background-color: blueviolet; */
-    text-align: left;
+    text-align: center;
     margin-left: 25%;
 }
 
@@ -46,11 +47,14 @@ body{
 }
 
 .divDownloadFile{
-    width: 40%;
+    /* width: 40%; */
     margin-left: 30%;
+    margin-right: 30%;
     background-color: #7ba0f8;
     border-radius: 20px;
+    height: 80px;
 }
 
 .spanDownloadFile{
+    /* background-color: aquamarine; */
 }
