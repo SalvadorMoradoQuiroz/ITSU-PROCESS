@@ -1,3 +1,13 @@
+<?php
+$imageAux = '../PUBLIC/DATA/IMAGES/logoITSU2.png';
+if(array_key_exists('value', $_REQUEST)){
+    if(isset($_REQUEST['value'])){
+        $imageAux = '../PUBLIC/DATA/IMAGES/' . $_REQUEST['value'] . '.png';
+    }
+}
+?>
+
+
 <!DOCTYPE html>
 <html lang="es">
 
@@ -29,7 +39,7 @@
                     <div class="col-md-4">
                         <div class="card mb-4 box-shadow">
                             <img class="card-img-top"
-                                src="../PUBLIC/DATA/IMAGES/logoITSU2.png"
+                                src=<?php echo $imageAux?>
                                 alt="">
                             <div class="card-body">
                                 <p class="card-text">Nombre del proceso o descripción</p>
@@ -48,7 +58,7 @@
                     <div class="col-md-4">
                         <div class="card mb-4 box-shadow">
                             <img class="card-img-top"
-                                src="../PUBLIC/DATA/IMAGES/logoITSU2.png"
+                                src=<?php echo $imageAux?>
                                 alt="">
                             <div class="card-body">
                                 <p class="card-text">Nombre del proceso o descripción</p>
@@ -63,12 +73,11 @@
                             </div>
                         </div>
                     </div>
-
 
                     <div class="col-md-4">
                         <div class="card mb-4 box-shadow">
                             <img class="card-img-top"
-                                src="../PUBLIC/DATA/IMAGES/logoITSU2.png"
+                                src=<?php echo $imageAux?>
                                 alt="">
                             <div class="card-body">
                                 <p class="card-text">Nombre del proceso o descripción</p>
@@ -84,66 +93,9 @@
                         </div>
                     </div>
 
+                    
 
-                    <div class="col-md-4">
-                        <div class="card mb-4 box-shadow">
-                            <img class="card-img-top"
-                                src="../PUBLIC/DATA/IMAGES/logoITSU2.png"
-                                alt="">
-                            <div class="card-body">
-                                <p class="card-text">Nombre del proceso o descripción</p>
-                                <div class="d-flex justify-content-between align-items-center">
-                                    <div class="btn-group">
-                                        <a href="../VIEWS/publication-process.html">
-                                            <button type="button" class="btn btn-sm btn-outline-primary">Ver</button>
-                                        </a>
-                                    </div>
-                                    <small class="text-muted">Fecha de publicación</small>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-
-
-                    <div class="col-md-4">
-                        <div class="card mb-4 box-shadow">
-                            <img class="card-img-top"
-                                src="../PUBLIC/DATA/IMAGES/logoITSU2.png"
-                                alt="">
-                            <div class="card-body">
-                                <p class="card-text">Nombre del proceso o descripción</p>
-                                <div class="d-flex justify-content-between align-items-center">
-                                    <div class="btn-group">
-                                        <a href="../VIEWS/publication-process.html">
-                                            <button type="button" class="btn btn-sm btn-outline-primary">Ver</button>
-                                        </a>
-                                    </div>
-                                    <small class="text-muted">Fecha de publicación</small>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-
-                    <div class="col-md-4">
-                        <div class="card mb-4 box-shadow">
-                            <img class="card-img-top"
-                                src="../PUBLIC/DATA/IMAGES/logoITSU2.png"
-                                alt="">
-                            <div class="card-body">
-                                <p class="card-text">Nombre del proceso o descripción</p>
-                                <div class="d-flex justify-content-between align-items-center">
-                                    <div class="btn-group">
-                                        <a href="../VIEWS/publication-process.html">
-                                            <button type="button" class="btn btn-sm btn-outline-primary">Ver</button>
-                                        </a>
-                                    </div>
-                                    <small class="text-muted">Fecha de publicación</small>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                    
 
                 </div>
             </div>
