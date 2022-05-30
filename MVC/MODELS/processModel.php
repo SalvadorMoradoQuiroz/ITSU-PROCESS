@@ -27,4 +27,13 @@ class ProcessModel{
             return "Error al registrar el proceso!, ¡Intenta de nuevo!";
         }
     }
+
+    public function consultProcess($idDepartment){
+        try{
+            $sentenciaSQL = "SELECT idProcess, title FROM process WHERE department	= $idDepartment;";
+             return $this->con->query($sentenciaSQL);
+        }catch(Exception $e){
+            return "¡Error al consultar los procesos!";
+        }
+    }
 }
