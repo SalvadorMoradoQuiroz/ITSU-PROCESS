@@ -51,7 +51,7 @@ $(document).ready(function () {
                     console.log(jsonData);
                     alert(jsonData);
                     if (jsonData.toString() === '¡Usuario registrado con éxito!') {
-                        window.location.href = '../../MVC/VIEWS/login.html';
+                        window.location.href = '../../MVC/VIEWS/login.php';
                     }
                 }
             });
