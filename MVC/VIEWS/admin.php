@@ -38,7 +38,7 @@ session_start();
                     </a>
                 </td>
                 <td>
-                    <a href="../VIEWS/list-process-modify.html">
+                    <a href="../VIEWS/list-process-modify.php">
                         <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-edit" width="100" height="100" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
                             <path stroke="none" d="M0 0h24v24H0z" fill="none" />
                             <path d="M9 7h-3a2 2 0 0 0 -2 2v9a2 2 0 0 0 2 2h9a2 2 0 0 0 2 -2v-3" />
@@ -64,7 +64,7 @@ session_start();
                     </a>
                 </td>
                 <td>
-                    <a href="../VIEWS/list-process-modify.html">
+                    <a href="../VIEWS/list-process-modify.php">
                         <button class="classButtonsAdmin">Modificar o Eliminar</button>
                     </a>
                 </td>
