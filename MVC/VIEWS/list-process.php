@@ -1,4 +1,5 @@
 <?php
+include_once('../MODELS/processModel.php');
 include_once('../CONTROLLERS/processController.php');
 $imageAux = '../PUBLIC/DATA/IMAGES/logoITSU2.png';
 $procesosArray = null;

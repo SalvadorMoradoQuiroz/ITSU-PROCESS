@@ -1,4 +1,5 @@
 <?php
+include_once('../MODELS/processModel.php');
 include_once('../CONTROLLERS/processController.php');
 $proceso = null;
 if (array_key_exists('idProceso', $_REQUEST)) {
