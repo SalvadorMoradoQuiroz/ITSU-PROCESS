@@ -18,4 +18,8 @@ class ProcessController{
     public function consultSpecificProcess($idProcess){
         return $this->objProcessModel->consultSpecificProcess($idProcess);
     }
+
+    public function updateProcess($idProcess, $title, $description, $video, $image, $document, $department){
+        return $this->objProcessModel->updateProcess($idProcess, $title, $description, $video, $image, $document, $department);
+    }
 }

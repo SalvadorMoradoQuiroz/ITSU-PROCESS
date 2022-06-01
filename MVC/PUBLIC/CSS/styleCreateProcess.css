@@ -87,3 +87,7 @@ body{
 #buttonPublicar:hover{
     background-color: #e8edf8;
 }
+
+.classAlingLeft{
+    text-align: left;
+}

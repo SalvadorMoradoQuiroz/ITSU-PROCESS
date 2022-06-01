@@ -91,7 +91,7 @@ $imageAux = $imageAux . $aux;
                                         <p class="card-text"><?php echo $proceso['title'] ?></p>
                                         <div class="d-flex justify-content-between align-items-center">
                                             <div class="btn-group">
-                                                <a href="../VIEWS/update-process.html?idProceso=<?php echo $proceso['idProcess']; ?>">
+                                                <a href="../VIEWS/update-process.php?idProcesoU=<?php echo $proceso['idProcess']; ?>">
                                                     <button type="button" class="btn btn-sm btn-outline-primary">Editar</button>
                                                 </a>
                                                 <a href="../PUBLIC/FilesPHP/deleteProcess.php">
