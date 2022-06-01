@@ -48,6 +48,16 @@ class ProcessModel
         }
     }
 
+    public function deleteProcess($idProcess)
+    {
+        try {
+            $sentenciaSQL = "DELETE FROM process WHERE idProcess = $idProcess;";
+            $this->con->query($sentenciaSQL);
+            return "¡Proceso eliminado!";
+        } catch (Exception $e) {
+            return "¡Error al eliminar el proceso!";
+        }
+    }
 
     public function updateProcess($idProcess, $title, $description, $video, $image, $document, $department)
     {

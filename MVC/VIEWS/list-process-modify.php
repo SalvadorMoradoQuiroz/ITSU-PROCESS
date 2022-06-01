@@ -82,8 +82,9 @@ $imageAux = $imageAux . $aux;
         <div class="album py-5 bg-light">
             <div class="container">
                 <div class="row">
+                    <?php $cont = 0;?>
                     <?php if (mysqli_num_rows($procesosArray) > 0) { ?>
-                        <?php while ($proceso = $procesosArray->fetch_assoc()) { ?>
+                        <?php while ($proceso = $procesosArray->fetch_assoc()) { $cont++; ?>
                             <div class="col-md-4">
                                 <div class="card mb-4 box-shadow">
                                     <img class="card-img-top" src=<?php echo $imageAux ?> alt="">
@@ -94,9 +95,9 @@ $imageAux = $imageAux . $aux;
                                                 <a href="../VIEWS/update-process.php?idProcesoU=<?php echo $proceso['idProcess']; ?>">
                                                     <button type="button" class="btn btn-sm btn-outline-primary">Editar</button>
                                                 </a>
-                                                <a href="../PUBLIC/FilesPHP/deleteProcess.php">
-                                                    <button type="button" class="btn btn-sm btn-outline-danger">Eliminar</button>
-                                                </a>
+                                                <!-- <a href="../PUBLIC/FilesPHP/deleteProcess.php"> -->
+                                                <button type="button" class="btn btn-sm btn-outline-danger" id="btnEliminar<?php echo $cont;?>" name="btnEliminar<?php echo $cont;?>" value="<?php echo $proceso['idProcess'];?>">Eliminar</button>
+                                                <!-- </a> -->
                                             </div>
                                             <!-- <small class="text-muted">Fecha de publicación</small> -->
                                         </div>
@@ -117,6 +118,9 @@ $imageAux = $imageAux . $aux;
             </div>
         </div>
     </section>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script type="text/javascript" src="../PUBLIC/JS/listProcessModify.js"></script>
 </body>
 
 </html>

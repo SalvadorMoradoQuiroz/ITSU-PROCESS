@@ -22,4 +22,8 @@ class ProcessController{
     public function updateProcess($idProcess, $title, $description, $video, $image, $document, $department){
         return $this->objProcessModel->updateProcess($idProcess, $title, $description, $video, $image, $document, $department);
     }
+
+    public function deleteProcess($idProcess){
+        return $this->objProcessModel->deleteProcess($idProcess);
+    }
 }
