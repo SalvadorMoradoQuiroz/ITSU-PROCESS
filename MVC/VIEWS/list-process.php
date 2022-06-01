@@ -50,6 +50,9 @@ if (array_key_exists('value', $_REQUEST)) {
         $objProcessController = new ProcessController();
         $procesosArray = $objProcessController->consultProcess($department);
     }
+} elseif (array_key_exists('search', $_REQUEST)) {
+    $objProcessController = new ProcessController();
+    $procesosArray = $objProcessController->consultProcessByWordKey($_REQUEST['search']);
 }
 ?>
 

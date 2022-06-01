@@ -26,4 +26,8 @@ class ProcessController{
     public function deleteProcess($idProcess){
         return $this->objProcessModel->deleteProcess($idProcess);
     }
+
+    public function consultProcessByWordKey($wordKey){
+        return $this->objProcessModel->consultProcessByWordKey($wordKey);
+    }
 }

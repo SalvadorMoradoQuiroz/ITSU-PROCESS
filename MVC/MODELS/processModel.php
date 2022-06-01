@@ -28,6 +28,16 @@ class ProcessModel
         }
     }
 
+    public function consultProcessByWordKey($wordKey)
+    {
+        try {
+            $sentenciaSQL = "SELECT idProcess, title FROM process WHERE title LIKE '%$wordKey%' ;";
+            return $this->con->query($sentenciaSQL);
+        } catch (Exception $e) {
+            return "¡Error al consultar los procesos!";
+        }
+    }
+
     public function consultProcess($idDepartment)
     {
         try {
