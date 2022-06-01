@@ -91,3 +91,7 @@ body{
 .classAlingLeft{
     text-align: left;
 }
+
+.fontTextArea{
+    font-family: arial, verdana, ms sans serif;
+}

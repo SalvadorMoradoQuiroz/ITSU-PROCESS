@@ -5,8 +5,8 @@ include_once('../../CONTROLLERS/processController.php');
 header("Content-Type: text/html;charset=utf-8");
 session_start();
 
-$title = $_POST['title'];
-$description = $_POST['description'];
+$title = trim($_POST['title']);
+$description = trim( $_POST['description']);
 $document = $_FILES['doc']['name'];
 $video = $_FILES['video']['name'];
 $image = $_FILES['image']['name'];

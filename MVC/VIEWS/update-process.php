@@ -40,9 +40,7 @@ if (array_key_exists('idProcesoU', $_REQUEST)) {
             <div class="classLeft">
                 <label for="description" class="classLabel">Descripción (Obligatorio)</label>
                 <br>
-                <textarea id="description" name="description" required class="classTextInput classTextInputTitle" cols="30" rows="10">
-                    <?php echo $proceso['description'] ?>
-                </textarea>
+                <textarea id="description" name="description" required class="classTextInput classTextInputTitle fontTextArea" cols="30" rows="10"><?php echo $proceso['description'] ?></textarea>
                 <!-- <input type="text" id="description" name="description" class="classTextInput classTextInputTitle"> -->
             </div>
             <div class="classAlingLeft">
@@ -55,18 +53,18 @@ if (array_key_exists('idProcesoU', $_REQUEST)) {
                     <td>
                         <label for="video" class="classLabel">Video (Opcional)</label>
                         <input type="text" id="nameVideo" name="nameVideo"  value="<?php $nameV = empty($proceso['video']) ? 'No ningún video' : $proceso['video'];
-                                                                                            echo $nameV; ?>">
+                                                                                            echo $nameV; ?>" readonly>
                         <input type="file" id="video" name="video" class="classTextInputFile">
                     </td>
                     <td>
                         <label for="image" class="classLabel">Imagen (Opcional)</label>
                         <input type="text" id="nameImage" name="nameImage"  value="<?php $nameI = empty($proceso['image']) ? 'No ninguna imagen' : $proceso['image'];
-                                                                                            echo $nameI; ?>">
+                                                                                            echo $nameI; ?>" readonly>
                         <input type="file" id="image" name="image" class="classTextInputFile">
                     </td>
                     <td>
                         <label for="doc" class="classLabel">Documento</label>
-                        <input type="text" id="nameDoc" name="nameDoc"  value="<?php echo $proceso['document'] ?>">
+                        <input type="text" id="nameDoc" name="nameDoc"  value="<?php echo $proceso['document'] ?>" readonly>
                         <input type="file" id="doc" name="doc" class="classTextInputFile">
                     </td>
                 </tr>
